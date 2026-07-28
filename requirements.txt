@@ -1,0 +1,54 @@
+# ── Web framework ─────────────────────────────────────────────────────────────
+fastapi==0.111.0
+uvicorn[standard]==0.30.1
+gunicorn==22.0.0
+python-multipart==0.0.9         # file uploads
+
+# ── Database ──────────────────────────────────────────────────────────────────
+motor==3.4.0                     # async MongoDB driver
+pymongo==4.7.2                   # sync MongoDB (for indexes at startup)
+redis==5.0.4                     # redis.asyncio included
+
+# ── Auth & security ───────────────────────────────────────────────────────────
+python-jose[cryptography]==3.3.0 # JWT
+passlib[bcrypt]==1.7.4           # password hashing
+bcrypt==4.1.3
+
+# ── Configuration ─────────────────────────────────────────────────────────────
+pydantic==2.7.1
+pydantic-settings==2.3.1
+python-dotenv==1.0.1
+
+# ── HTTP client ───────────────────────────────────────────────────────────────
+httpx==0.27.0                    # async HTTP (Google Maps, external APIs)
+
+# ── Communication services ────────────────────────────────────────────────────
+twilio==9.1.0                    # SMS + voice calls
+sendgrid==6.11.0                 # email notifications
+
+# ── AI / OpenAI ───────────────────────────────────────────────────────────────
+openai==1.30.1
+
+# ── ML & audio processing ────────────────────────────────────────────────────
+numpy==1.26.4
+scikit-learn==1.5.0
+joblib==1.4.2
+librosa==0.10.2                  # audio feature extraction (MFCC, mel, etc.)
+soundfile==0.12.1                # audio I/O
+audioread==3.0.1                 # fallback audio decoder
+
+# ── Firebase push notifications ───────────────────────────────────────────────
+firebase-admin==6.5.0
+
+# ── AWS S3 uploads ────────────────────────────────────────────────────────────
+boto3==1.34.121
+
+# ── Utilities ─────────────────────────────────────────────────────────────────
+bson==0.5.10                     # ObjectId serialisation outside motor
+python-dateutil==2.9.0
+pytz==2024.1
+aiofiles==23.2.1                 # async file I/O
+
+# ── Observability ─────────────────────────────────────────────────────────────
+json-log-formatter==0.5.2        # structured JSON logging in production
+prometheus-fastapi-instrumentator==7.0.0  # /metrics endpoint (optional)
