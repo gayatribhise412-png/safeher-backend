@@ -1,7 +1,7 @@
 # ── Web framework ─────────────────────────────────────────────────────────────
-fastapi
-pydantic
-pydantic-settings       
+fastapi==0.111.0
+pydantic[email]
+pydantic-settings==2.5.2     
 
 # ── Database ──────────────────────────────────────────────────────────────────
 motor==3.4.0                     # async MongoDB driver
@@ -41,3 +41,5 @@ json-log-formatter==0.5.2        # structured JSON logging in production
 prometheus-fastapi-instrumentator==7.0.0  # /metrics endpoint (optional)
 gunicorn==22.0.0
 uvicorn[standard]==0.30.6
+uvicorn[standard]==0.30.6
+gunicorn==22.0.0
