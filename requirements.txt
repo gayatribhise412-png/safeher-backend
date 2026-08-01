@@ -5,7 +5,6 @@ pydantic-settings
 
 # ── Database ──────────────────────────────────────────────────────────────────
 motor==3.4.0                     # async MongoDB driver
-pymongo==4.7.2                   # sync MongoDB (for indexes at startup)
 redis==5.0.4                     # redis.asyncio included
 
 # ── Auth & security ───────────────────────────────────────────────────────────
