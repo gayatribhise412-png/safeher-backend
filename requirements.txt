@@ -39,3 +39,4 @@ aiofiles==23.2.1                 # async file I/O
 json-log-formatter==0.5.2        # structured JSON logging in production
 prometheus-fastapi-instrumentator==7.0.0  # /metrics endpoint (optional)
 gunicorn==22.0.0
+uvicorn[standard]==0.30.6
