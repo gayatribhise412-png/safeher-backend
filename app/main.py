@@ -163,8 +163,12 @@ def create_app() -> FastAPI:
 
 # ── Application instance (used by Gunicorn / uvicorn) ─────────────────────────
 app = create_app()
-
-
+app.add_middleware(   
+     CORSMiddleware,
+     allow_origins=["*"],
+     allow_credentials=True,
+     allow_methods=["*"],
+     allow_headers=["*"],
 # ── Dev runner ────────────────────────────────────────────────────────────────
 if __name__ == "__main__":
     import uvicorn
