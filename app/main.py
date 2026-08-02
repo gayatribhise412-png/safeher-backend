@@ -160,6 +160,7 @@ def create_app() -> FastAPI:
 
     return app
 # ── Dev runner ────────────────────────────────────────────────────────────────
+app = create_app()
 if __name__ == "__main__":
     import uvicorn
 
@@ -176,3 +177,4 @@ if __name__ == "__main__":
         limit_concurrency=5000,    # max concurrent requests across all workers
         backlog=2048,
     )
+        
