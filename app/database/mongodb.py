@@ -28,3 +28,6 @@ async def close_db() -> None:
 
 def get_db() -> AsyncIOMotorDatabase:
     return _db
+def get_collection(collection_name: str):
+    """Return a collection from the database."""
+    return _db[collection_name]
